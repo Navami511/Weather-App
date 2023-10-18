@@ -25,6 +25,7 @@ struct days: View {
     var tempArray : [Int] = [25, 24, 22, 22, 20]
     var body: some View {
         HStack(spacing: 40) {
+            
             ForEach(0..<daysOfTheWeek.count) { day in
                 Text(daysOfTheWeek[day])
                     .font(.subheadline)
